@@ -100,7 +100,7 @@ git clone https://github.com/jerrykuku/luci-app-vssr.git
 ```
 
 制作配置文件
-- [插件翻译Luci - Applications](https://www.right.com.cn/forum/thread-344825-1-1.html)
+- [插件翻译Luci - Applications](https://www.right.com.cn/forum/thread-344825-1-1.html) By xtwz
 
 ```yaml
 make menuconfig
@@ -139,7 +139,7 @@ make V=s -j$(nproc)
 ```
 
 ## 友情链接
-+ [GitHub 在线编译](https://p3terx.com/archives/build-openwrt-with-github-actions.html)
-+ [编译openwrt基础教程](https://kmeer.cn/7.html)
++ [GitHub 在线编译](https://p3terx.com/archives/build-openwrt-with-github-actions.html)  By P3TERX
++ [编译openwrt基础教程](https://kmeer.cn/7.html)  By 年年
 
 ## 本教程由luochen570编写若转载引用请说明出处
