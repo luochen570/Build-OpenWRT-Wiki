@@ -7,6 +7,7 @@
 - 清华源
 [Debian](https://mirrors.tuna.tsinghua.edu.cn/help/debian/)
 [Ubuntu](https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/)
+
 更新软件列表
 ```yaml
 sudo apt update -y
