@@ -3,6 +3,10 @@
 
 建议使用ubuntu或者debian进行编译
 
+安装依赖请先更换国内软件源
+- 清华源
+[Debian](https://mirrors.tuna.tsinghua.edu.cn/help/debian/)
+[Ubuntu](https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/)
 更新软件列表
 ```yaml
 sudo apt update -y
