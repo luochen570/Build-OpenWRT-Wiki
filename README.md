@@ -71,7 +71,7 @@ sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 
 文件在源码根目录中，使用自己喜欢的文本编辑器编辑（vim nano）添加以下几行
 ```yaml
-sudo nano feeds.conf.default
+nano feeds.conf.default
 ```
 通常前两个就够了
 ```yaml
