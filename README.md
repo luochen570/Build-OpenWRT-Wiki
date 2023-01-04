@@ -11,7 +11,7 @@
 [Debian](https://mirrors.tuna.tsinghua.edu.cn/help/debian/)
 [Ubuntu](https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/)
 
--中科大源
+- 中科大源
 [Debian](https://mirrors.ustc.edu.cn/help/debian.html)
 [Ubuntu](https://mirrors.ustc.edu.cn/help/ubuntu.html)
 
