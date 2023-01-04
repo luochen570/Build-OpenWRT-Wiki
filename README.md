@@ -1,10 +1,14 @@
-#编译wiki（垃圾废物天天搞不好这些）
+## 编译wiki（垃圾废物天天搞不好这些）
 
-#建议使用ubuntu或者debian进行编译（arch也可以但是依赖不一样arch也有教程但是要自己搜）
-#更新软件列表
+-建议使用ubuntu或者debian进行编译（arch也可以但是依赖不一样arch也有教程但是要自己搜）
+-更新软件列表
+```yaml
 sudo apt update -y
+```
 #全面更新系统
+```yaml
 sudo apt full-upgrade -y
+```
 #安装所需依赖
 sudo apt install -y ack antlr3 asciidoc autoconf automake autopoint binutils bison build-essential \
 bzip2 ccache cmake cpio curl device-tree-compiler fastjar flex gawk gettext gcc-multilib g++-multilib \
