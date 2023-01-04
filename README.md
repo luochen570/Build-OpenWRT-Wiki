@@ -53,7 +53,7 @@ git clone https://github.com/Lienol/openwrt
 git clone https://github.com/immortalwrt/immortalwrt
 ```
 
-#进入编译文件夹（只要位置对了就可以）
+进入编译文件夹（只要位置对了就可以）
 ```yaml
 cd ~/lede
 ```
