@@ -1,6 +1,7 @@
-# 编译wiki（垃圾废物天天搞不好这些）
 
-建议使用ubuntu或者debian进行编译（arch也可以但是依赖不一样arch也有教程但是要自己搜）
+## 欢迎来到luochen570的OpenWRT编译指南
+
+建议使用ubuntu或者debian进行编译
 
 更新软件列表
 ```yaml
@@ -19,6 +20,7 @@ libmpc-dev libmpfr-dev libncurses5-dev libncursesw5-dev libreadline-dev libssl-d
 mkisofs msmtp nano ninja-build p7zip p7zip-full patch pkgconf python2.7 python3 python3-pip qemu-utils \
 rsync scons squashfs-tools subversion swig texinfo uglifyjs upx-ucl unzip vim wget xmlto xxd zlib1g-dev
 ```
+- 其他系统依赖请参考[OpenWRT Wiki Prerequisites](https://openwrt.org/docs/guide-developer/toolchain/install-buildsystem)
 
 本次拉取lean大源码
 
@@ -44,9 +46,9 @@ git clone https://github.com/immortalwrt/immortalwrt
 cd ~/lede
 ```
 
-- 添加部分插件源-可以选择添加feeds源或者直接git拉源代码（可选建议选上这一步）
+- 添加部分插件源码-可以选择添加feeds源或者直接git拉源代码（可选建议选上这一步）
 
-添加 feeds源
+添加feeds源
 
 一键命令
 ```yaml
@@ -73,13 +75,11 @@ src-git small https://github.com/kenzok8/small
 - 也可以选择拉取插件源码
 - 示例：git拉取Hello World源码
 ```yaml
-cd lede/package/lean/ 
-```
-git lua-maxminddb 依赖 
-
-git clone https://github.com/jerrykuku/lua-maxminddb.git
+cd lede/package/lean/  
+git clone https://github.com/jerrykuku/lua-maxminddb.git  #git lua-maxminddb 依赖
 git clone https://github.com/jerrykuku/luci-app-vssr.git  
 
+```
 
 更新feeds文件
 ```yaml
@@ -90,7 +90,6 @@ git clone https://github.com/jerrykuku/luci-app-vssr.git
 制作配置文件
 - [插件翻译Luci - Applications]（https://www.right.com.cn/forum/thread-344825-1-1.html）
 
-保存时不用重命名我是个哈皮
 ```yaml
 make menuconfig
 ```
@@ -101,11 +100,12 @@ make menuconfig
 make download -j8
 ```
 开始编译文件，多线程会更快哦（-j 后面是线程数，第一次编译推荐用单线程）
+
+最大线程数不要超过cpu线程数的2倍
 ```yaml
 make V=s -j1
 ```
-- 编译完成后输出路径：
-## bin/targets
+- 编译完成后输出路径：bin/targets
 
 
 ## 二次编译：
@@ -127,7 +127,7 @@ make V=s -j$(nproc)
 ```
 
 ## 友情链接
-- [GitHub 在线编译]（https://p3terx.com/archives/build-openwrt-with-github-actions.html）
-- [编译openwrt基础教程] （https://kmeer.cn/7.html）
++ [GitHub 在线编译](https://p3terx.com/archives/build-openwrt-with-github-actions.html)
++ [编译openwrt基础教程](https://kmeer.cn/7.html)
 
 ## 本教程由luochen570编写若转载引用请说明出处
