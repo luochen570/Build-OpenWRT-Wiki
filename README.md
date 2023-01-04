@@ -34,13 +34,13 @@ rsync scons squashfs-tools subversion swig texinfo uglifyjs upx-ucl unzip vim wg
 ```
 - 其他系统依赖请参考[OpenWRT Wiki Prerequisites](https://openwrt.org/docs/guide-developer/toolchain/install-buildsystem)
 
+
 本次拉取lean大源码
 
 拉取lean-Openwrt 源码
 ```yaml
 git clone https://github.com/coolsnowwolf/lede
 ```
-
 - 其他源码地址
 ```yaml
 #官方源：
