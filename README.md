@@ -1,6 +1,7 @@
-## 编译wiki（垃圾废物天天搞不好这些）
+# 编译wiki（垃圾废物天天搞不好这些）
 
 -建议使用ubuntu或者debian进行编译（arch也可以但是依赖不一样arch也有教程但是要自己搜）
+
 -更新软件列表
 ```yaml
 sudo apt update -y
@@ -10,20 +11,23 @@ sudo apt update -y
 sudo apt full-upgrade -y
 ```
 #安装所需依赖
+```yaml
 sudo apt install -y ack antlr3 asciidoc autoconf automake autopoint binutils bison build-essential \
 bzip2 ccache cmake cpio curl device-tree-compiler fastjar flex gawk gettext gcc-multilib g++-multilib \
 git gperf haveged help2man intltool libc6-dev-i386 libelf-dev libglib2.0-dev libgmp3-dev libltdl-dev \
 libmpc-dev libmpfr-dev libncurses5-dev libncursesw5-dev libreadline-dev libssl-dev libtool lrzsz \
 mkisofs msmtp nano ninja-build p7zip p7zip-full patch pkgconf python2.7 python3 python3-pip qemu-utils \
 rsync scons squashfs-tools subversion swig texinfo uglifyjs upx-ucl unzip vim wget xmlto xxd zlib1g-dev
-
+```
 
 #本次拉取lean大源码
 #拉取lean-Openwrt 源码
 #https://github.com/coolsnowwolf/lede直接下载
+```yaml
 git clone https://github.com/coolsnowwolf/lede
-
-#其他源码地址
+```
+- 其他源码地址
+```yaml
 #官方源：
 git clone https://openwrt.org/openwrt/openwrt.git
 #Lean 源：
@@ -32,7 +36,7 @@ git clone https://github.com/coolsnowwolf/lede
 git clone https://github.com/Lienol/openwrt
 #immortalwrt 源：
 git clone https://github.com/immortalwrt/immortalwrt
-
+```
 
 #进入编译文件夹（只要位置对了就可以）
 cd ~/lede
