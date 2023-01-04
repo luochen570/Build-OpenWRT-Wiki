@@ -100,7 +100,7 @@ git clone https://github.com/jerrykuku/luci-app-vssr.git
 ```
 
 制作配置文件
-- [插件翻译Luci - Applications]（https://www.right.com.cn/forum/thread-344825-1-1.html）
+- [插件翻译Luci - Applications](https://www.right.com.cn/forum/thread-344825-1-1.html)
 
 ```yaml
 make menuconfig
