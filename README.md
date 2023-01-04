@@ -67,7 +67,7 @@ cd ~/lede
 sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 ```
-编辑文件 feeds.conf.default
+编辑文件——>feeds.conf.default
 
 文件在源码根目录中，使用自己喜欢的文本编辑器编辑（vim nano）添加以下几行
 ```yaml
