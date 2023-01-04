@@ -4,9 +4,15 @@
 建议使用ubuntu或者debian进行编译
 
 安装依赖请先更换国内软件源
+
+更换过的的小伙伴可以跳过这一步
+
 - 清华源
 [Debian](https://mirrors.tuna.tsinghua.edu.cn/help/debian/)
 [Ubuntu](https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/)
+-中科大源
+[Debian](https://mirrors.ustc.edu.cn/help/debian.html)
+[Ubuntu](https://mirrors.ustc.edu.cn/help/ubuntu.html)
 
 更新软件列表
 ```yaml
