@@ -73,22 +73,17 @@ sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 ```yaml
 nano feeds.conf.default
 ```
-通常前两个就够了
+
 ```yaml
 src-git kenzo https://github.com/kenzok8/openwrt-packages
 src-git small https://github.com/kenzok8/small 
-
-#src-git helloworld https://github.com/fw876/helloworld
-#src-git passwall https://github.com/xiaorouji/openwrt-passwall
-#src-git lienol https://github.com/Lienol/openwrt-package
-#src-git opentopd  https://github.com/sirpdboy/sirpdboy-package
 ```
 
 - 也可以选择拉取插件源码
 - 示例：git拉取Hello World源码
 ```yaml
 cd lede/package/lean/  
-git clone https://github.com/jerrykuku/lua-maxminddb.git  #git lua-maxminddb 依赖
+git clone https://github.com/jerrykuku/lua-maxminddb.git
 git clone https://github.com/jerrykuku/luci-app-vssr.git  
 
 ```
@@ -140,6 +135,6 @@ make V=s -j$(nproc)
 
 ## 友情链接
 + [GitHub 在线编译](https://p3terx.com/archives/build-openwrt-with-github-actions.html)  By P3TERX
-+ [编译openwrt基础教程](https://kmeer.cn/7.html)  By 年年
++ [编译openwrt基础教程](https://www.zhujiwo.cc/171.html)  By 年年
 
 ## 本教程由luochen570编写若转载引用请说明出处
